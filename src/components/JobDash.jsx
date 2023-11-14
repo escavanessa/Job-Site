@@ -1,10 +1,18 @@
-import Card from "./JobCard"
+import JobCard from "./JobCard"
 
 const JobContainer = () => {
     return(
         <>
         <div className="dash-wrapper">
-            <Card />
+            <JobCard />
+            <JobCard />
+            <JobCard />
+            <JobCard />
+            <JobCard />
+            <JobCard />
+            <JobCard />
+            <JobCard />
+            <JobCard />
         </div>
         </>
     )

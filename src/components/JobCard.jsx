@@ -1,14 +1,20 @@
-const Card = () => {
-    return(
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+
+
+const JobCard = () => {
+    return (
         <>
-        <div className="card-wrapper">
-            <h1>title</h1>
-            <h2>location</h2>
-            <h1>salary</h1>
-        </div>
-        <button className="starred"/>
+            <Card>
+                <Card.Body>
+                    <h2>Title</h2>
+                    <h3>location</h3>
+                    <h2>Salary</h2>
+                    <Button variant="primary">Go somewhere</Button>
+                </Card.Body>
+            </Card>
         </>
     )
 }
 
-export default Card
+export default JobCard

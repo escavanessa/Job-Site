@@ -4,7 +4,7 @@ const NavBar = () => {
         <>
             <div className="nav-wrapper">
                 <div className="search-wrapper">
-                    <input className="seachbar"
+                    <input className="searchbar"
                         type="text"
                         placeholder="search for jobs"
                         name="search"
@@ -17,7 +17,7 @@ const NavBar = () => {
                     />
                 </div>
                 <div className="location-wrapper">
-                    <input className="seachbar"
+                    <input className="searchbar"
                         type="text"
                         placeholder="location"
                         name="search"

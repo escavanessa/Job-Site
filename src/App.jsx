@@ -7,14 +7,15 @@ import SideBar from './components/SideBar'
 
 
 function App() {
-  
+
   return (
     <>
-    <h1>hello</h1>
-    <NavBar/>
-    <SideBar/>
-    <JobContainer />
-    <Info />
+      <NavBar />
+      <div className='container'>
+        <SideBar />
+        <JobContainer />
+        <Info />
+      </div>
     </>
   )
 }

@@ -1,6 +1,74 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  width:1024px;
+  height:auto;
   text-align: center;
+}
+
+.nav-wrapper {
+  display: flex;
+  height: 40px;
+}
+.searchbar {
+  width: 400px;
+  height: 20px;
+}
+
+.container {  display: grid;
+  grid-template-columns: 0.6fr 1.5fr 0.9fr;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  gap: 20px 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "sidebar dash-wrapper descript-wrapper";
+}
+
+.sidebar { grid-area: sidebar; }
+
+.dash-wrapper { grid-area: dash-wrapper; }
+
+.descript-wrapper { grid-area: descript-wrapper; }
+
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin-top: 10px;
+}
+
+.dash-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dropdown {
+  margin-bottom: 10px;
+}
+
+.card {
+  width: 200px;
+  border: solid gray;
+  border-radius: 20px;
+  margin: 10px;
+}
+.test {
+  margin: 10px;
+}
+
+.starred {
+  margin-bottom: 5px;
+
+}
+
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.body-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
