@@ -1,22 +1,23 @@
 
 import './App.css'
-import JobContainer from './components/JobDash'
-import Info from './components/JobDesc'
-import NavBar from './components/NavBar'
-import SideBar from './components/SideBar'
+import Footer from './Components/Footer'
+import JobDash from './Components/JobDash'
+import NavBar from './Components/NavBar'
+import Search from './Components/Search'
+import Values from './Components/Values'
+
 
 
 function App() {
 
   return (
-    <>
+    <div className='w-[85%] m-auto bg-white'>
       <NavBar />
-      <div className='container'>
-        <SideBar />
-        <JobContainer />
-        <Info />
-      </div>
-    </>
+      <Search />
+      <JobDash />
+      <Values />
+      <Footer />
+    </div>
   )
 }
 

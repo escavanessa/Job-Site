@@ -1,21 +1,9 @@
-import JobCard from "./JobCard"
+import React from 'react'
 
-const JobContainer = () => {
-    return(
-        <>
-        <div className="dash-wrapper">
-            <JobCard />
-            <JobCard />
-            <JobCard />
-            <JobCard />
-            <JobCard />
-            <JobCard />
-            <JobCard />
-            <JobCard />
-            <JobCard />
-        </div>
-        </>
-    )
+const JobDash = () => {
+  return (
+    <div>JobDash</div>
+  )
 }
 
-export default JobContainer
+export default JobDash
