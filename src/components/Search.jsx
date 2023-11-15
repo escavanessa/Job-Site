@@ -69,7 +69,7 @@ const Search = () => {
         <div className='singleSearch flex items-center gap-2'>
           <label htmlFor='Type' className='text-[#808080] font-semibold'>Type:</label>
 
-          <select name='' id='relevance' className='bg-white rounded-[3px] px-4 py-1'>
+          <select name='' id='type' className='bg-white rounded-[3px] px-4 py-1'>
             <option value="">Full-time</option>
             <option value="">Part-time</option>
             <option value="">Entry-Level</option>
@@ -79,13 +79,13 @@ const Search = () => {
         </div>
 
         <div className='singleSearch flex items-center gap-2'>
-          <label htmlFor='level' className='text-[#808080] font-semibold'>Level</label>
+          <label htmlFor='level' className='text-[#808080] font-semibold'>Salary</label>
 
           <select name='' id='relevance' className='bg-white rounded-[3px] px-4 py-1'>
-            <option value="">beginner</option>
-            <option value="">intermediate</option>
-            <option value="">advanced</option>
-            <option value="">Senior</option>
+            <option value="">Below 45,000</option>
+            <option value="">Below 85,000</option>
+            <option value="">Below 120,00</option>
+            <option value="">Far too much</option>
           </select>
 
         </div>

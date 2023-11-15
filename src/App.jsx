@@ -1,4 +1,5 @@
 
+import { useEffect, useState } from 'react'
 import getJobs from './API/GetJobs'
 import './App.css'
 import Footer from './Components/Footer'
@@ -10,16 +11,24 @@ import Values from './Components/Values'
 
 
 function App() {
+  const [jobs, setJobs] = useState([])
 
+
+useEffect(() => {
   getJobs().then((response) => {
+    setJobs(response.jobs.job)
     console.log(response)
-  });
+  }) .catch(
+    (error) => {console.log(error)}
+  )
+
+}, []);
 
   return (
     <div className='w-[85%] m-auto bg-white'>
       <NavBar />
       <Search />
-      <JobDash />
+      <JobDash jobs={jobs}/>
       <Values />
       <Footer />
     </div>
