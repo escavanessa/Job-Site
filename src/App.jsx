@@ -12,11 +12,12 @@ import Values from './Components/Values'
 
 function App() {
   const [jobs, setJobs] = useState([])
-
+  const [filterJobs, setFilterJobs] = useState([])
 
 useEffect(() => {
   getJobs().then((response) => {
     setJobs(response.jobs.job)
+    setFilterJobs(response.jobs.job)
     console.log(response)
   }) .catch(
     (error) => {console.log(error)}
@@ -27,8 +28,8 @@ useEffect(() => {
   return (
     <div className='w-[85%] m-auto bg-white'>
       <NavBar />
-      <Search />
-      <JobDash jobs={jobs}/>
+      <Search jobs={jobs} setJobs={setJobs} filterJobs={filterJobs} setFilterJobs={setFilterJobs}/>
+      <JobDash jobs={filterJobs}/>
       <Values />
       <Footer />
     </div>
