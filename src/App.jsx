@@ -7,6 +7,7 @@ import JobDash from './Components/JobDash'
 import NavBar from './Components/NavBar'
 import Search from './Components/Search'
 import Values from './Components/Values'
+import Aside from './Components/aside'
 
 
 

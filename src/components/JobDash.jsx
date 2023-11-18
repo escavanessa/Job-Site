@@ -1,12 +1,15 @@
 import React from 'react'
 
 
+
 const JobDash = ({ jobs }) => {
 
   return (
     <div>
-      <div className='grid grid-cols-3'>
+      <div className='grid grid-cols-3 gap-1'>
         <div className="jobContainer col-span-2 flex gap-10 justify-center flex-wrap items-center py-10">
+
+
 
           {
             jobs.map(({ id, name, city, description, company, logo, }) => {
@@ -40,7 +43,6 @@ const JobDash = ({ jobs }) => {
               )
             })
           }
-
         </div>
       </div>
     </div>
