@@ -1,8 +1,17 @@
 import React from 'react'
+import { useState } from 'react'
+
 
 
 
 const JobDash = ({ jobs }) => {
+  const [selectedJob, setSelectedJob] = useState('')
+
+  function handleClick(description) {
+    setSelectedJob(description)
+  }
+
+
 
   return (
     <div>
@@ -15,7 +24,12 @@ const JobDash = ({ jobs }) => {
             jobs.map(({ id, name, city, description, company, logo, }) => {
               const parsedHtml = { __html: description }
               return (
-                <div key={id} className='group group/item singleJob w-[250px] p-[20px] bg-white rounded-[10px]
+
+
+
+                <div
+                onClick={() => handleClick(description)}
+                key={id} className='group group/item singleJob w-[250px] p-[20px] bg-white rounded-[10px]
         hover:bg-blueColor shadow-lg shadow-greyIsh-400/700 hover:shadow-lg overflow-hidden h-[350px] relative'>
 
                   <span className='flex justify-between items-center gap-4'>
@@ -44,6 +58,16 @@ const JobDash = ({ jobs }) => {
             })
           }
         </div>
+
+
+
+        <div className='col-span-1 flex py-10 ml-10'>
+            <div className='descContainer shadow-lg shadow-greyIsh-400/700 hover:shadow-lg w-[600px] min-w-[500px] max-h-[5000px] rounded-lg '>
+                 <div className='p-10 text-textColor' dangerouslySetInnerHTML={{__html: selectedJob}}></div>
+            </div>
+        </div>
+
+
       </div>
     </div>
   )

@@ -73,8 +73,10 @@ const Search = ({ jobs, setFilterJobs }) => {
   return (
     <div className='searchDiv grid gap-10 bg-greyIsh rounded-[10px] p-[3rem]'>
       <form action=''>
-        <div className='firstDiv flex justify-between items-center rounded-[8px] 
+        <div className='firstDiv md:flex justify-between items-center rounded-[8px] 
         gap-[10px] bg-white p-5 shadow-lg shadow-greyIsh-700'>
+
+          
 
           <div className='flex gap-2 items-center'>
             <AiOutlineSearch className='text-[25px] icon' />
@@ -89,6 +91,8 @@ const Search = ({ jobs, setFilterJobs }) => {
             />
           </div>
 
+
+
           <div className='flex gap-2 items-center'>
             <BsHouse className='text-[25px] icon' />
             <input type='text' className='bg-transparent text-blue-500 focus:outline-none w-[400px]'
@@ -101,6 +105,8 @@ const Search = ({ jobs, setFilterJobs }) => {
               onClick={(e) => clearInput(e, 'company')}
             />
           </div>
+
+
 
           <div className='flex gap-2 items-center'>
             <CiLocationOn className='text-[25px] icon' />
@@ -117,10 +123,13 @@ const Search = ({ jobs, setFilterJobs }) => {
         </div>
       </form>
 
+
+
+
       <div className='secDiv flex items-center gap-10 justify-center'>
 
 
-        <div className='singleSearch flex items-center gap-2'>
+        <div className='singleSearch md:flex items-center gap-2'>
           <label htmlFor='Relevance' className='text-[#808080] font-semibold'>Sort by:</label>
 
           <select name='' id='relevance' className='bg-white rounded-[3px] px-4 py-1'>
@@ -132,7 +141,7 @@ const Search = ({ jobs, setFilterJobs }) => {
 
         </div>
 
-        <div className='singleSearch flex items-center gap-2'>
+        <div className='singleSearch md:flex items-center gap-2'>
           <label htmlFor='Type' className='text-[#808080] font-semibold'>Type:</label>
 
           <select name='' id='type' className='bg-white rounded-[3px] px-4 py-1'>
@@ -145,7 +154,7 @@ const Search = ({ jobs, setFilterJobs }) => {
 
         </div>
 
-        <div className='singleSearch flex items-center gap-2'>
+        <div className='singleSearch md:flex items-center gap-2'>
           <label htmlFor='level' className='text-[#808080] font-semibold'>Salary</label>
 
           <select name='' id='relevance' className='bg-white rounded-[3px] px-4 py-1'>
