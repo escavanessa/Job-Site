@@ -2,11 +2,12 @@
 import { useEffect, useState } from 'react'
 import getJobs from './API/GetJobs'
 import './App.css'
-import Footer from './Components/Footer'
-import JobDash from './Components/JobDash'
-import NavBar from './Components/NavBar'
-import Search from './Components/Search'
-import Values from './Components/Values'
+
+import JobDash from './components/JobDash'
+import NavBar from './components/NavBar'
+import Search from './components/Search'
+import Values from './components/Values'
+import Footer from './components/Footer'
 
 
 
